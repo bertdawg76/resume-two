@@ -1,0 +1,36 @@
+<md-content class="mainColor">
+  <div class="navbar navbar-default navbar-static-top mainColor"  ng-controller="NavbarCtrl">
+
+    <div class="container">
+      <div class="navbar-header">
+        <a
+            href="https://www.linkedin.com/in/bert-coleman-5b95b0106" target="_blank">
+          <i class="fa fa-linkedin fa-3x"></i>
+        </a>
+      </div>
+      <div class="navbar-header">
+        <a href="https://www.github.com/bertdawg76" target="_blank">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </div>
+      <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li ng-repeat="item in menu" ui-sref-active="active">
+            <a  ui-sref="{{item.state}}">{{item.title}}</a>
+          </li>
+          <li ng-show="isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="signup" ng-style="navbar">Sign up</a></li>
+          <li ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="login" ng-style="navbar">Login</a></li>
+          <li ng-show="isLoggedIn()"><p class="navbar-text" ng-style="navbar">Hello {{ currentUser().name }}</p> </li>
+          <li ng-show="isLoggedIn()"><a href='' ng-click="logOut()">Log Out</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</md-content>

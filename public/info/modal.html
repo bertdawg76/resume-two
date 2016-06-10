@@ -1,0 +1,15 @@
+<div class="popup">
+  <div class="modal-header">
+    <h3 class="modal-title">Project Details</h3>
+  </div>
+  <div class="modal-body">
+    <p>{{oneProject.data.project}}</p>
+    <p>{{oneProject.data.describe}}</p>
+    <p><a class="btn btn-block btn-social btn-linkedin" href="{{oneProject.data.url}}" target="_blank">
+      <span class="fa fa-github"></span>Github example</a></p>
+    <p ng-hide="!oneProject.data.webUrl">
+      <a class="btn btn-block btn-default" href="{{oneProject.data.webUrl}}" target="_blank">
+        <span class="fa-fa-github"></span>Website</a></p>
+  </div>
+  <div class="modal-footer" ng-click="ok()">Close</div>
+</div>

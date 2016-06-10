@@ -1,0 +1,148 @@
+<div layout="column" flex>
+  <md-content class="mainColor" layout="column" flex>
+    <div class="container">
+      <div class="row">
+        <div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h1 class="writing">Bert Coleman</h1>
+          <h4 class="writing">Riverton, UT | 801-836-4139 | <a href="mailto:bertcoleman76@gmail.com?subject=Email from my website"><i class="fa fa-envelope" aria-hidden="true"></i></a></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trigger the modal with a button -->
+
+
+    <!-- Modal -->
+    <!-- <div id="myModal" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+
+
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">Project Details</h4>
+           </div>
+           <div class="modal-body">
+             <p>{{oneProject.data.project}}</p>
+             <p>{{oneProject.data.describe}}</p>
+             <p><a href="{{oneProject.data.url}}" target="_blank">Github example</a></p>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+
+       </div>
+     </div>-->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h3 class="writing">Programming Skills</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+
+          <div ng-repeat="thing in display.skills">
+            <div class="skills"><h4>{{thing.title}}</h4></div>
+            <!--<p class="writing">{{thing.description | limitTo: 100}}</p>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h3 class="writing">Projects</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="thumbnail display" ng-repeat="thing in display.projects">
+            <h4 style="color: orangered">{{thing.project}}</h4>
+            <!-- <p>
+                 <a ui-sref="viewSkill({id: thing._id})" class="btn btn-default" role="button">Details</a>
+             </p>-->
+            <button type="button" class="btn btn-primary"
+                    data-toggle="modal" data-target="#myModal" ng-click="getProject(thing._id)">Details</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+       <div class="flipper">
+         <div class="front">
+           <div class="container">
+             <div class="row" ng-repeat="thing in display.projects">
+               <div class="col-sm-6 col-md-4">
+                 <div class="thumbnail">
+                   <p>{{thing.project}}</p>
+
+                   <p>
+
+                     <a ui-sref="viewSkill({id: thing._id})" class="btn btn-default" role="button">Details</a>
+                   </p>
+                   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-click="getProject(thing._id)">Open Modal</button>
+
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="back">
+           <div class="container">
+             <div class="row">
+               <div class="col-sm-6 col-md-4">
+                 <div class="thumbnail" >
+                   <p>{{thing.project}}</p>
+                   <p>{{thing.describe}}</p>
+                   <p><a href="{{thing.url}}" target="_blank">Github example</a></p>
+
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         </div>
+
+       </div>
+     </div>
+     -->
+
+  </md-content>
+
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="bertResume">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="description" content="tiger ecommerce">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <title>tigerApp</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <style type="text/css">
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+  </style>
+
+</head>
+
+
+<body ng-cloak layout="column">
+<navbar></navbar>
+
+<div flex layout="column">
+  <div ui-view flex layout="column"></div>
+</div>
+
+
+<!-- JQuery, bootstrap -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--Angular and dependencies -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js
+"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+
+
+
+<script src="bower_components/lodash/dist/lodash.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+
+
+<!-- client app folder -->
+<script src="app.js"></script>
+
+<!--Controllers, services, directives-->
+<script src="user/user.service.js"></script>
+<script src="user/signup.controller.js"></script>
+<script src="user/login.controller.js"></script>
+
+<script src="info/info.controller.js"></script>
+<script src="info/info.service.js"></script>
+
+<script src="skills/skills.service.js"></script>
+<script src="skills/skills.controller.js"></script>
+
+<script src="admin/admin.controller.js"></script>
+
+<script src="nav/nav.controller.js"></script>
+<script src="nav/nav.directive.js"></script>
+
+<script src="footer/footer.controller.js"></script>
+<script src="footer/footer.directive.js"></script>
+
+<script src="info/modal.controller.js"></script>
+
+
+
+</body>
+</html>

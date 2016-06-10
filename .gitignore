@@ -1,0 +1,10 @@
+# Dependency directory
+
+node_modules
+
+# Environment variables
+
+
+
+server/Config/development.json
+

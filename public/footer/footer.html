@@ -1,0 +1,31 @@
+<md-content class="footer">
+
+  <div class="mainColor">
+    <div class="navbar navbar-default navbar-static-top"  ng-controller="NavbarCtrl">
+      <div class="mainColor">
+        <div class="container">
+          <div class="navbar-header">
+
+            <a href="https://www.linkedin.com/in/bert-coleman-5b95b0106" target="_blank" class="navbar-brand">LinkedIN</a>
+          </div>
+          <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li ng-repeat="item in menu" ui-sref-active="active">
+                <a  ui-sref="{{item.state}}">{{item.title}}</a>
+              </li>
+              <li class="writing" ng-show="isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="signup">Sign up</a></li>
+              <li ng-hide="isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+              <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ currentUser().name }}</p> </li>
+              <li ng-show="isLoggedIn()"><a href='' ng-click="logOut()">Log Out</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</md-content>

@@ -1,0 +1,29 @@
+{
+  "name": "resume",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "bert coleman"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-ui-router": "^0.3.1",
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6",
+    "lodash": "^4.13.1",
+    "angular-material": "^1.0.9",
+    "angular-bootstrap": "^1.3.3",
+    "bootstrap-social": "^5.0.0",
+    "angular-sanitize": "^1.5.6"
+  }
+}
